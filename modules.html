@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modules — NumCode</title>
+<meta name="description" content="Explore NumCode's HTML, CSS and Java modules and try the sample quiz with an auto-updating progress tracker.">
+<meta name="theme-color" content="#1a0f3d">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="NumCode home"><img src="assets/logo.svg" alt="" width="38" height="38">Num<span>Code</span></a>
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <ul class="nav-links" id="menu"><li><a href="index.html">Home</a></li><li><a href="modules.html" aria-current="page">Modules</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="quiz.html">Quizzes</a></li><li><a href="research.html">Research</a></li><li><a href="about.html">About</a></li><li><a href="account.html">Account</a></li></ul>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap page-hero reveal">
+  <p class="kicker">Modules</p>
+  <h1>Three languages, <span class="grad">one learning path.</span></h1>
+  <p>Each module moves from basic to intermediate topics, with examples, a short video and a quiz.</p>
+</div>
+
+<section>
+  <div class="wrap grid g3">
+    <article class="card reveal"><div class="icon">H</div><h3>HTML — structure</h3><p>How web content is organized.</p>
+      <ul class="checks"><li>Page structure and headings</li><li>Paragraphs, links and images</li><li>Lists and tables</li><li>Forms and inputs</li></ul></article>
+    <article class="card reveal"><div class="icon">C</div><h3>CSS — presentation</h3><p>How web content looks.</p>
+      <ul class="checks"><li>Selectors, colors and fonts</li><li>The box model and spacing</li><li>Flexbox layouts</li><li>Hover effects and transitions</li></ul></article>
+    <article class="card reveal"><div class="icon">J</div><h3>Java — logic</h3><p>How programs think and act.</p>
+      <ul class="checks"><li>Variables and data types</li><li>Input and output</li><li>Conditions and loops</li><li>Methods and simple classes</li></ul></article>
+  </div>
+  <div class="wrap" style="margin-top:1.5rem"><p class="note">Topic lists above are an overview of the planned module scope. Final lesson content follows the competencies in the assessment instrument.</p></div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="kicker">Live demo</p><h2>Quiz + progress tracker</h2><p>Answer three sample questions. Your results fill the tracker, just like the full tool is meant to. (Demo progress stays in this browser only.)</p></div>
+    <div class="grid g2">
+      <div class="card quiz reveal"><p class="kicker" id="quiz-step">Question 1</p><div id="quiz-body"></div></div>
+      <div class="card reveal">
+        <h3>Your progress</h3>
+        <div class="track-row"><div><span>HTML</span><span id="pct-html">0%</span></div><div class="bar"><i id="bar-html"></i></div></div>
+        <div class="track-row"><div><span>CSS</span><span id="pct-css">0%</span></div><div class="bar"><i id="bar-css"></i></div></div>
+        <div class="track-row"><div><span>Java</span><span id="pct-java">0%</span></div><div class="bar"><i id="bar-java"></i></div></div>
+        <div class="track-row" style="margin-top:1.4rem"><div><span style="color:#fff">Overall</span><span id="pct-all">0%</span></div><div class="bar"><i id="bar-all"></i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="38" height="38">Num<span>Code</span></a>
+        <p style="margin-top:1rem;max-width:38ch">A web-based learning prototype for HTML, CSS and Java, built for Grade 12 ICT Programming students at Unida Christian Colleges.</p>
+      </div>
+      <div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="modules.html">Modules</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="quiz.html">Quizzes</a></li><li><a href="research.html">Research</a></li><li><a href="about.html">About</a></li><li><a href="account.html">Account</a></li></ul></div>
+      <div><h3>Study site</h3><ul><li>Senior High School Department</li><li>Unida Christian Colleges</li><li>Imus City, Cavite</li></ul></div>
+    </div>
+    <div class="copy"><span>&copy; <span id="year">2026</span> NumCode Research Team. For academic use.</span><span>Research prototype &middot; not an official school platform</span></div>
+  </div>
+</footer>
+</body>
+</html>

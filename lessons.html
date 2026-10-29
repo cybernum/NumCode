@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lessons — NumCode</title>
+<meta name="description" content="Search NumCode lessons for HTML, CSS and Java, preview them, download PDFs and find videos.">
+<meta name="theme-color" content="#1a0f3d">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="NumCode home"><img src="assets/logo.svg" alt="" width="38" height="38">Num<span>Code</span></a>
+    <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <ul class="nav-links" id="menu"><li><a href="index.html">Home</a></li><li><a href="modules.html">Modules</a></li><li><a href="lessons.html" aria-current="page">Lessons</a></li><li><a href="quiz.html">Quizzes</a></li><li><a href="research.html">Research</a></li><li><a href="about.html">About</a></li><li><a href="account.html">Account</a></li></ul>
+  </div>
+</header>
+<main id="main">
+<div class="wrap page-hero reveal">
+  <p class="kicker">Lessons</p>
+  <h1>Read it, try it, <span class="grad">keep it.</span></h1>
+  <p>Short lessons for HTML, CSS and Java. Preview any lesson, download it as a PDF, and find videos for the same topic.</p>
+</div>
+<section>
+  <div class="wrap">
+    <div id="continue" class="cta-row" style="margin-bottom:1.5rem"></div>
+    <div class="finder">
+      <label for="q" class="sr">Search lessons and videos</label>
+      <input id="q" type="search" placeholder="Search: flex, loop, form, padding…" autocomplete="off">
+      <div class="chips" role="group" aria-label="Filter by language">
+        <button class="chip" data-lang="all" aria-pressed="true">All</button><button class="chip" data-lang="html" aria-pressed="false">HTML</button><button class="chip" data-lang="css" aria-pressed="false">CSS</button><button class="chip" data-lang="java" aria-pressed="false">Java</button>
+      </div>
+    </div>
+    <div class="track-row"><div><span id="done-txt"></span><span id="count" aria-live="polite"></span></div><div class="bar"><i id="done-bar"></i></div></div>
+    <div class="grid g3" id="lesson-list" style="margin-top:1.5rem"></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Video library</h2><p>One search per lesson topic, so you always get current videos. Links open YouTube in a new tab.</p></div>
+    <div class="grid g3" id="video-list"></div>
+  </div>
+</section>
+<div id="print-area" aria-hidden="true"></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="38" height="38">Num<span>Code</span></a>
+        <p style="margin-top:1rem;max-width:38ch">A web-based learning prototype for HTML, CSS and Java, built for Grade 12 ICT Programming students at Unida Christian Colleges.</p>
+      </div>
+      <div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="modules.html">Modules</a></li><li><a href="lessons.html" aria-current="page">Lessons</a></li><li><a href="quiz.html">Quizzes</a></li><li><a href="research.html">Research</a></li><li><a href="about.html">About</a></li><li><a href="account.html">Account</a></li></ul></div>
+      <div><h3>Study site</h3><ul><li>Senior High School Department</li><li>Unida Christian Colleges</li><li>Imus City, Cavite</li></ul></div>
+    </div>
+    <div class="copy"><span>&copy; <span id="year">2026</span> NumCode Research Team. For academic use.</span><span>Research prototype &middot; not an official school platform</span></div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.58.0/dist/umd/supabase.js" defer></script><script src="config.js" defer></script><script src="lessons.js" defer></script>
+</body>
+</html>
