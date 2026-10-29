@@ -1,4 +1,3 @@
-/* NumCode lessons: data, search, preview, PDF (print), done-tracking. */
 (() => {
   "use strict";
   const L = [
@@ -117,5 +116,7 @@ const ORDER = ["html", "css", "java"]; L.sort((a, b) => ORDER.indexOf(a.l) - ORD
   document.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => {
     lang = b.dataset.lang; document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", c === b)); draw();
   }));
-  draw();
+  const fromHash = () => { const h = location.hash.slice(1), b = document.querySelector('.chip[data-lang="' + h + '"]'); if (b) b.click(); };
+  window.addEventListener("hashchange", fromHash);
+  draw(); fromHash();
 })();
